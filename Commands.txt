@@ -1,0 +1,22 @@
+====================================================
+ IT3040 Assignment 1 – Quick Command Reference
+====================================================
+
+-- SETUP (run once) --
+
+pip install playwright openpyxl
+(skip "playwright install" if it times out - NOT needed with the updated script)
+
+
+-- NAVIGATE TO FOLDER --
+
+cd /d D:\test_automation
+
+
+-- RUN THE SCRIPT (uses your existing Chrome automatically) --
+
+python test_automation.py --excel "Assignment_1_Test_cases.xlsx" --url "https://www.pixelssuite.com/chat-translator" --wait-ms 5000 --type-delay-ms 80 --slow-mo-ms 200 --save-every 1 --keep-open
+
+
+-- IF CHROME IS IN A NON-STANDARD LOCATION --
+Open test_automation.py and add your Chrome.exe path to the chrome_paths list near line 155.
